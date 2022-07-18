@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis cursos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="cards-container">
+        <div class="card card1" onclick="modalActivated(0)" >
+            <section class="img-container">
+                <img src="img/web.gif" alt="imagen">
+            </section>
+            <section class="text-container">
+                <div class="text">
+                    <h3>Desarrollo web</h3>
+                    <p>Es una disciplina informática que se encarga de desarrollar mediante el uso de códigos y lenguajes específicos la implementación de todo lo relacionado con lo digital y web. Con esta disciplina se crean las páginas web. </p>
+                </div> 
+            </section>
+        </div>
+        <div class="card card2" onclick="modalActivated(1)">
+            <section class="img-container">
+                <img src="img/ingles.gif" alt="imagen">
+            </section>
+            <section class="text-container">
+                <div class="text">
+                    <h3>Inglés</h3>
+                    <p>El dominio del lenguaje Inglés es esencial en la industria tecnológica. La documentación del software, la terminología propia de los lenguajes de programación e incluso la comunicación en un equipo formado por personas de distintos países.</p>
+                </div> 
+            </section>
+        </div>
+        <div class="card card3" onclick="modalActivated(2)">
+            <section class="img-container">
+                <img src="img/diseño.gif" alt="imagen">
+            </section>
+            <section class="text-container">
+                <div class="text">
+                    <h3>Diseño web</h3>
+                    <p>Es el punto de partida en la creación de paginas web. Trabaja en conjunto con el desarrollador web ya que primero debemos saber el modelo de esa página, pues el diseñador es el se encarga de este proceso de creación del diseño. </p>
+                </div> 
+            </section>
+        </div>
+        <div class="card card4" onclick="modalActivated(3)">
+            <section class="img-container">
+                <img src="img/hab.blandas.gif" alt="imagen">
+            </section>
+            <section class="text-container">
+                <div class="text">
+                    <h3>Habilidades blandas</h3>
+                    <p>Las habilidades blandas son las competencias, actitudes y comportamientos que una persona puede
+                        desarrollar para relacionarse de manera efectiva con su entorno y poder resolver problemas, cumplir metas personales y en equipo.</p>
+                </div> 
+            </section>
+        </div>
+        <div class="card card5" onclick="modalActivated(4)">
+            <section class="img-container">
+                <img src="img/cripto.gif" alt="imagen">
+            </section>
+            <section class="text-container">
+                <div class="text">
+                    <h3>Criptomonedas</h3>
+                    <p>¡Es el nuevo mundo de la economía digital! Las criptomonedas son una nueva manera de llevar a cabo tu economía pero de manera digital y descentralizada.</p>
+                </div> 
+            </section>
+        </div>  
+        <div class="card card6" onclick="modalActivated(5)">
+            <section class="img-container">
+                <img src="img/inclusion.gif" alt="imagen">
+            </section>
+            <section class="text-container">
+                <div class="text">
+                    <h3>Inclusión social</h3>
+                    <p>Como todo un profesional debemos entender que es la diversidad social y como funciona, para aprovecharla a nuestro favor y asi crear sitios cada vez mas inclusivos hasta lograr el mundo que queremos: inclusivo, diverso y sin discriminación.</p>
+                </div> 
+            </section>
+        </div>
+    </section>
+  </main>
+  <div id="overlay">
+    <div class="modal" id='modal'>
+        <div>
+            <h2 class="titulo-modal"><span onclick="modalDeactivated()"></span></h2>
+        </div>
+        <div>
+            <p class="parrafo-modal"></p>
+        </div>
+    </div>
+</div>  
+  <script src="script.js"></script>
+</body>
+</html>
