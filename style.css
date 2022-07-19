@@ -14,6 +14,9 @@ header {
     display: flex;
     justify-content: center;
 }
+main {
+    transition: all 1s;
+}
 main .cards-container {
     width: 100%;
     display: flex;
@@ -28,7 +31,7 @@ main .cards-container .card {
     box-shadow: 6px 6px 15px -2px rgba(0,0,0,0.75);
     margin-bottom: 20px;
     border-radius: 10px;
-    transition: all 0.5;
+    transition: all 0.5s;
 }
 main .cards-container .card .img-container { /*contenedor de img*/
     display: flex;
@@ -100,7 +103,7 @@ main .cards-container .card6 .img-container {
 }
 main .cards-container .card:hover {
     transform: scale(1.1);
-    transition: all 0.5;
+    transition: all 0.5s;
 }
 .modal {
     position: fixed;
@@ -114,7 +117,6 @@ main .cards-container .card:hover {
     left:50%;
     top:50%;
     transform:translate(-50%,-200%);
-
 }
 .modal h2 {
     font-size: 2.5rem;
